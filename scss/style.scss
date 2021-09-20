@@ -1,0 +1,20 @@
+// IMPORT
+
+@import "base";
+@import "header";
+@import "footer";
+@import "pages/home";
+@import "pages/servicios";
+@import "pages/catalogo";
+@import "pages/sobre_mi";
+@import "pages/contacto";
+@import "media-query";
+
+//  CÓDIGO
+
+.comentario{
+    word-spacing: 1px;
+    font-size: 35px;
+    padding: 10px;
+    text-align: center;
+}

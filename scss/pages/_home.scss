@@ -1,0 +1,31 @@
+.inicio{
+    
+    main{
+        height: 100%;
+        margin-top: 3%;
+    }
+}
+
+.principal{
+    background-color: $rosa_medio;
+
+    &__descripcion{
+    padding: 1.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    &__titulo{
+    margin-top: 1.5%;
+    font-family: $cursiva;
+    font-size: 50px;
+    width: 100%;
+    color: black;
+    border-left: solid white 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+}

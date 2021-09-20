@@ -1,0 +1,41 @@
+/*Contacto*/ 
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 2% 5vw;
+    margin: 20px 25vw 40px;
+    border-radius: 6px;
+
+    background-color: $rosa_medio;
+
+    &-checkbox__box{
+    width: 15px;
+    height: 15px;
+        &:hover{
+        cursor: pointer;
+        }
+    }
+}
+
+.botones{
+    align-self: center;
+
+    &__form{
+    background-color: white;
+    box-shadow: 0px 3px 3px 1px hsla(240, 1%, 70%, 0.502);
+    border: solid 1px white;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 4px;
+    margin: 4px;
+    
+        &:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to top, #fce1e6 100%, transparent 50%);
+    border: solid 1px #ffc7d1;
+    transform: translateY(-1px);
+        }
+    }
+}

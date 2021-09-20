@@ -1,0 +1,38 @@
+
+// PALETA DE COLORES
+
+$rosa_claro: #fbdfe9;
+$rosa_medio: #e2a0ae;
+$verde_claro: #DAEDBD;
+$rosa_oscuro: #c57588;
+$verde: #637a28;
+$azul_oscuro: #353536;
+
+// TIPOGRAFÍAS
+
+$default: 'Roboto', sans-serif;
+$cursiva: 'MonteCarlo', cursive;
+
+// TAMAÑOS DE FUENTE
+
+$letra_peq: 14px;
+
+// RESET 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $default;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: $azul_oscuro
+}
+
+

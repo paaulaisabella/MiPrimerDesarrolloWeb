@@ -1,0 +1,203 @@
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 1024px){
+
+    /* GENERAL */
+    body header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        nav{
+        align-self: auto;
+        display: block;
+        width: 100%;
+        }   
+    }
+    
+    .menu{
+        display: block;
+        li{
+            border-right: none;
+        }
+    }
+
+    /* INICIO */
+    .inicio{
+        justify-content: center;
+        align-items: center;
+    }
+    .principal__titulo{
+        height: 100%;
+    }
+    .principal__descripcion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5%;
+    }
+}
+
+@media only screen and (max-width: 992px){
+
+    div#carouselExampleControls {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    /* GENERAL */
+    body header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        nav{
+        align-self: auto;
+        display: block;
+        width: 100%;
+        }
+    }
+    .menu{
+        display: block;
+    }
+    body{
+        font-size: $letra_peq;
+    }
+
+    /* INICIO */
+    .inicio{
+        justify-content: center;
+        align-items: center;
+
+        a{
+            padding: 6px;
+            font-size: $letra_peq;
+            font-family: $default;
+            font-weight: 100;
+        }
+    }
+    .comentario{
+        font-size: 120%;
+    }
+    .principal__titulo{
+        height: 100%;
+    }
+    .principal__descripcion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
+        height: 100%;
+    }
+    
+        /* SERVICIOS */
+        .parrafo-servicio{
+            flex-direction: column;
+            margin: 5% 5%;
+        }
+    
+        .parrafo-servicio__imagen--derecha{
+            margin: 0px;
+            margin-top: 3%;
+        }
+    
+        .parrafo-servicio__imagen--izquierda{
+            margin-right: 0px;
+        }
+        
+            /* CATÁLOGO */
+            .catalogo{
+                margin: 20px 1.5%;
+                grid-template-rows: 1fr 2fr 2fr;
+            }
+        
+            .catalogo__subtitulo{
+                font-size: 220%;
+            }
+        
+            /* SOBRE MI */
+            .sobre-mi{
+                width: 60vw;
+                height: auto;
+                margin: auto;
+                padding: 15px 25px 15px 25px;
+                border-radius: 8px;
+                background-color: $rosa_medio;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            
+            .sobre-mi__foto{
+                width: 100%;
+                height: 300px
+            }
+            
+            .sobre-mi__descripcion{
+                width: 100%;
+                height: 100%;
+            }
+            
+            /* CONTACTO */
+
+            .contacto{
+                a{
+                    padding: 6px;
+                    font-size: $letra_peq;
+                    font-family: $default;
+                    font-weight: 100;
+                }
+            }
+
+            .form{
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+    
+}
+
+
+@media only screen and (max-width: 420px){
+    /* GENERAL */
+
+    .footer__logo{
+        width: 20px;
+        height: 20px;
+    }
+
+    /* CATÁLOGO */
+
+    .catalogo{
+        margin: 7px 1.5%;
+        grid-template-rows: 1fr 2fr 2fr;
+    }
+    .catalogo__subtitulo{
+        font-size: 150%;
+    }
+
+    /* SOBRE MI */
+    .sobre-mi{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: 1.5%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3%;
+    &__foto{
+        width: 100%;
+        height: 100%;
+        }
+
+    &__descripcion{
+        width: 100%;
+        height: 100%;
+        }
+    }
+}
