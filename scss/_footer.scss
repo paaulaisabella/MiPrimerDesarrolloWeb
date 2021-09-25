@@ -1,27 +1,33 @@
 footer{
     background-color: $verde_claro;
     margin: 1.5% 1.5% 0px 1.5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     line-height: 1.5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .footer__comentario{
     text-transform: uppercase;
-    margin-top: 1%;
-    margin-bottom: 1.5%;
 }
 
 .footer__parrafo{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__lista{
+    padding-left: 0;
     margin-bottom: 1%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.footer__link{
+.footer__item{
     padding-left: 5%;
     padding-right: 5%;
     margin: auto;
@@ -30,8 +36,10 @@ footer{
 .footer__logo{
     width: 30px;
     height: 30px;
+    color: $azul_oscuro;
     &:hover{
         transform:translateY(-5px) scale(1.2);
+        color: $rosa_medio;
     }
 }
 
