@@ -16,13 +16,6 @@
         }   
     }
     
-    .menu{
-        display: block;
-        li{
-            border-right: none;
-        }
-    }
-
     /* INICIO */
     .inicio{
         justify-content: center;
@@ -63,7 +56,16 @@
         }
     }
     .menu{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        li{
+            line-height: 5.3rem;
+        }
+    }
+
+    .submenu{
+        position: initial;
     }
     body{
         font-size: $letra_peq;

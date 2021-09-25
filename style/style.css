@@ -78,6 +78,7 @@ nav {
     display: none;
     width: inherit;
     height: 100%;
+    line-height: 1.3rem;
     font-size: .9rem;
     border-right: none; }
     .submenu li:last-child {
@@ -302,10 +303,6 @@ footer {
       align-self: auto;
       display: block;
       width: 100%; }
-  .menu {
-    display: block; }
-    .menu li {
-      border-right: none; }
   /* INICIO */
   .inicio {
     justify-content: center;
@@ -335,7 +332,13 @@ footer {
       display: block;
       width: 100%; }
   .menu {
-    display: block; }
+    display: flex;
+    flex-direction: column;
+    height: 90vh; }
+    .menu li {
+      line-height: 5.3rem; }
+  .submenu {
+    position: initial; }
   body {
     font-size: 14px; }
   /* INICIO */
