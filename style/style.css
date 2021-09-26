@@ -66,23 +66,25 @@ nav {
       background-color: #e2a0ae; }
 
 .submenu {
+  display: block;
   position: absolute;
   background-color: #fbdfe9;
   z-index: 100;
-  width: inherit;
   padding: 0;
   margin: 0;
-  width: 18rem;
-  border: 2px solid #fbdfe9; }
+  white-space: nowrap; }
   .submenu li {
     display: none;
     width: inherit;
     height: 100%;
     font-size: .9rem;
-    border-right: none;
-    transition: 450ms ease; }
-    .submenu li:last-child {
-      box-shadow: 0px 4px 3px 1px rgba(110, 110, 110, 0.502); }
+    transition: 450ms ease;
+    /* &:last-child{
+        box-shadow: 0px 4px 3px 1px hsla(0, 0%, 43%, 0.502);
+        border-bottom: 2px solid $rosa_oscuro;
+        } */ }
+    .submenu li:first-child {
+      border-top: 2px solid #c57588; }
     .submenu li a:hover {
       transition: 0.1s;
       color: white;
@@ -323,22 +325,34 @@ footer {
 
 @media only screen and (max-width: 768px) {
   /* GENERAL */
-  body header {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    body header nav {
-      align-self: auto;
-      display: block;
-      width: 100%; }
+  body {
+    overflow-x: hidden; }
+    body header {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      body header nav {
+        align-self: auto;
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: transparent; }
   .menu {
     display: flex;
     flex-direction: column;
-    height: 90vh; }
-    .menu li {
-      line-height: 5.3rem; }
+    height: 77%;
+    background-color: #fbdfe9;
+    z-index: 1000; }
+    .menu a {
+      height: inherit; }
+  .menu > li {
+    line-height: 2rem; }
   .submenu {
-    position: initial; }
+    width: 100%;
+    position: relative; }
+    .submenu li:last-child {
+      border-bottom: solid 2px #c57588; }
   body {
     font-size: 14px; }
   /* INICIO */
@@ -346,7 +360,6 @@ footer {
     justify-content: center;
     align-items: center; }
     .inicio a {
-      padding: 6px;
       font-size: 14px;
       font-family: "Roboto", sans-serif;
       font-weight: 100; }
@@ -394,7 +407,6 @@ footer {
     height: 100%; }
   /* CONTACTO */
   .contacto a {
-    padding: 6px;
     font-size: 14px;
     font-family: "Roboto", sans-serif;
     font-weight: 100; }
@@ -408,6 +420,8 @@ footer {
   .footer__logo {
     width: 20px;
     height: 20px; }
+  .submenu li {
+    white-space: pre-wrap; }
   /* CATÁLOGO */
   .catalogo {
     margin: 7px 1.5%;

@@ -37,12 +37,12 @@ nav{
         position: relative;
         width: 100%;
         &:hover .submenu li{
-        display: block;
+            display: block;
         }
     }
 
     a{
-        padding: 8px;
+    padding: 8px;
     width: auto;
     height: 100%;
     font-size: 110%;
@@ -52,39 +52,43 @@ nav{
     color: $azul_oscuro;
     transition-property: color, background-color;
     transition: 450ms;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-    &:hover{
-        transition: 0.1s;
-    color: white;
-    background-color: $rosa_medio;
+    
+        &:hover{
+            transition: 0.1s;
+            color: white;
+            background-color: $rosa_medio;
         }
     }
 
 }
 
 .submenu{
+    display: block;
     position: absolute;
     background-color: $rosa_claro;
     z-index: 100;
-    width: inherit;
     padding: 0;
     margin: 0;
-    width: 18rem;
-    border: 2px solid $rosa_claro;
-
+    white-space: nowrap;
+    
     li{
     display: none;
     width: inherit;
     height: 100%;
     font-size: .9rem;
-    border-right: none;
     transition: 450ms ease;
-        &:last-child{
-        box-shadow: 0px 4px 3px 1px hsla(0, 0%, 43%, 0.502);
+
+        &:first-child{
+        border-top: 2px solid $rosa_oscuro;
         }
+        /* &:last-child{
+        box-shadow: 0px 4px 3px 1px hsla(0, 0%, 43%, 0.502);
+        border-bottom: 2px solid $rosa_oscuro;
+        } */
         a{
             &:hover{
                 transition: 0.1s;

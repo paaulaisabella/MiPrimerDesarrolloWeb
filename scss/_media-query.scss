@@ -44,7 +44,11 @@
 @media only screen and (max-width: 768px){
 
     /* GENERAL */
-    body header{
+
+    body {
+        overflow-x: hidden;
+    
+        header{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -53,20 +57,41 @@
         align-self: auto;
         display: block;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
         }
     }
+}
     .menu{
         display: flex;
-        flex-direction: column;
-        height: 90vh;
-        li{
-            line-height: 5.3rem;
+        flex-direction: column;    
+        height: 77%;
+        background-color: $rosa_claro;
+        z-index: 1000;
+
+        a{
+            height: inherit;
         }
     }
 
-    .submenu{
-        position: initial;
+    .menu > li {
+        line-height: 2rem;
     }
+
+    .submenu {
+        width: 100%;
+        position: relative;
+
+
+
+        li{
+            &:last-child{
+                border-bottom: solid 2px $rosa_oscuro;
+            }
+        }
+    }
+
     body{
         font-size: $letra_peq;
     }
@@ -77,7 +102,6 @@
         align-items: center;
 
         a{
-            padding: 6px;
             font-size: $letra_peq;
             font-family: $default;
             font-weight: 100;
@@ -149,7 +173,6 @@
 
             .contacto{
                 a{
-                    padding: 6px;
                     font-size: $letra_peq;
                     font-family: $default;
                     font-weight: 100;
@@ -172,6 +195,10 @@
         width: 20px;
         height: 20px;
     }
+
+    .submenu li {
+    white-space: pre-wrap;
+}
 
     /* CATÁLOGO */
 
