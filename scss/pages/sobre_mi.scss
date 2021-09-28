@@ -9,13 +9,13 @@
     align-items: center;
     
     &__foto{
-    width: 40%;
-    height: 70vh;
+    width: 50%;
+    height: 100%;
     }
 
     &__descripcion{
     background-color: $rosa_medio;
-    width: 60%;
+    width: auto;
     height: 100%;
     display: flex;
     align-items: center;
