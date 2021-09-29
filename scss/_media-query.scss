@@ -101,12 +101,6 @@
     .inicio{
         justify-content: center;
         align-items: center;
-
-        a{
-            font-size: $letra_peq;
-            font-family: $default;
-            font-weight: 100;
-        }
     }
     .comentario{
         font-size: 120%;
@@ -171,14 +165,6 @@
     }
             
     /* CONTACTO */
-
-    .contacto{
-        a{
-            font-size: $letra_peq;
-            font-family: $default;
-            font-weight: 100;
-        }
-    }
 
     .form{
         width: 100%;
