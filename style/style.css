@@ -50,6 +50,7 @@ nav {
     padding: 8px;
     width: auto;
     height: 100%;
+    font-size: 110%;
     letter-spacing: 0.6px;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
@@ -353,7 +354,8 @@ footer {
     background-color: #fbdfe9;
     z-index: 1000; }
     .menu a {
-      height: inherit; }
+      height: inherit;
+      font-size: 90%; }
   .menu > li {
     line-height: 2rem; }
   .submenu {
