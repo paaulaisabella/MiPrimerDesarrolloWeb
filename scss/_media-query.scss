@@ -87,9 +87,9 @@
 
 
         li{
-            &:last-child{
-                border-bottom: solid 2px $rosa_oscuro;
-            }
+            &:first-child{
+                border-top: 2px solid $rosa_oscuro;
+                }
         }
     }
 

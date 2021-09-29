@@ -68,7 +68,7 @@ nav {
 .submenu {
   display: block;
   position: absolute;
-  background-color: #fbdfe9;
+  background-color: white;
   z-index: 100;
   padding: 0;
   margin: 0;
@@ -79,16 +79,23 @@ nav {
     height: 100%;
     font-size: .9rem;
     transition: 450ms ease;
-    /* &:last-child{
-        box-shadow: 0px 4px 3px 1px hsla(0, 0%, 43%, 0.502);
-        border-bottom: 2px solid $rosa_oscuro;
-        } */ }
-    .submenu li:first-child {
-      border-top: 2px solid #c57588; }
-    .submenu li a:hover {
-      transition: 0.1s;
-      color: white;
-      background-color: #e2a0ae; }
+    background-color: white;
+    border-left: 2px solid #c57588;
+    border-right: 2px solid #c57588; }
+    .submenu li:last-child {
+      border-bottom: 2px solid #c57588; }
+    .submenu li:first-of-type {
+      padding-top: 5px; }
+    .submenu li:last-of-type {
+      padding-bottom: 5px; }
+    .submenu li a {
+      background-color: #fbdfe9;
+      margin-left: 5px;
+      margin-right: 5px; }
+      .submenu li a:hover {
+        transition: 0.1s;
+        color: white;
+        background-color: #e2a0ae; }
 
 .flecha {
   font-size: 10px; }
@@ -199,9 +206,7 @@ footer {
   word-spacing: 10px;
   letter-spacing: 0.09px;
   display: grid;
-  grid-template-areas: "titulo titulo titulo"
- "imagenGrande cuadroPeq1 cuadroPeq2"
- "imagenGrande cuadroPeq3 cuadroPeq4";
+  grid-template-areas: "titulo titulo titulo" "imagenGrande cuadroPeq1 cuadroPeq2" "imagenGrande cuadroPeq3 cuadroPeq4";
   grid-template-rows: auto 2fr 2fr;
   grid-template-columns: 3fr 1fr 1fr;
   column-gap: .5%; }
@@ -355,8 +360,8 @@ footer {
   .submenu {
     width: 100%;
     position: relative; }
-    .submenu li:last-child {
-      border-bottom: solid 2px #c57588; }
+    .submenu li:first-child {
+      border-top: 2px solid #c57588; }
   body {
     font-size: 14px; }
   /* INICIO */
