@@ -2,26 +2,12 @@
 
 @mixin sizes ($gridarea){
     grid-area: $gridarea;
-    width: 100%;
-    height: 100%;
+    width: 10rem;
+    height: 15rem;
 }
 
-.catalogo{
-    margin: 10px 10% 20px;
-    word-spacing: 10px;
-    letter-spacing: 0.09px;
-
-    display: grid;
-    grid-template-areas: 
-    "titulo titulo titulo"
-    "imagenGrande cuadroPeq1 cuadroPeq2"
-    "imagenGrande cuadroPeq3 cuadroPeq4";
-
-    grid-template-rows: auto 2fr 2fr;
-    grid-template-columns: 3fr 1fr 1fr;
-    column-gap: .5%;
     
-    &__subtitulo{
+    .catalogo__subtitulo{
     text-align: center;
     word-spacing: 2px;
     color: $azul_oscuro;
@@ -31,35 +17,19 @@
     padding-bottom: .7%;
     }
 
-    &__imagen{
-    @include sizes(imagenGrande);
+    .catalogo {
+        display: grid;
+        grid-template-columns: (3, 1fr);
+        grid-gap: 1rem;
+        grid-auto-flow: row dense;
+        grid-auto-rows: 150px;
+
+        &__imagen{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
+      
 
-    &__cuadro--peq1{
-    @include sizes(cuadroPeq1);
-    }
-
-    &__cuadro--peq2{
-    @include sizes(cuadroPeq2);
-    }
-
-    &__cuadro--peq3{
-    @include sizes(cuadroPeq3);
-    }
-
-    &__cuadro--peq4{
-    @include sizes(cuadroPeq4);
-    }
-}
-
-
-.catalogo__cuadro--peq1:hover,.catalogo__cuadro--peq2:hover,.catalogo__cuadro--peq3:hover,.catalogo__cuadro--peq4:hover{
-    transform: scale(1.2,1.2);
-    z-index: 1;
-    transition: .6s;
-}
-
-.catalogo__imag:hover{
-    transform: scale(1.6,1.2);
-}
 
