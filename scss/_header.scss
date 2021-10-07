@@ -82,11 +82,11 @@ nav{
     font-size: .9rem;
     transition: 450ms ease;
     background-color: white;
-    border-left: 2px solid $rosa_oscuro;
-    border-right: 2px solid $rosa_oscuro;
+    border-left: 1px solid $rosa_oscuro;
+    border-right: 1px solid $rosa_oscuro;
 
         &:last-child{
-        border-bottom: 2px solid $rosa_oscuro;
+        border-bottom: 1px solid $rosa_oscuro;
         }
 
         &:first-of-type{

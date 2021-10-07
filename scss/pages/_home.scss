@@ -7,13 +7,13 @@
 }
 
 .principal{
-    background-color: $rosa_medio;
 
     &__descripcion{
     padding: 1.5%;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: justify;
     }
 
     &__titulo{
@@ -27,5 +27,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    }
+}
+
+.seccion-inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+    &__item{
+        background-color: $rosa_medio;
+        padding: 2rem;
+        border-radius: 3px;
+        width: 15rem;
+
+        box-shadow: 0px 1.5px 1.5px 1px hsla(240, 1%, 70%, 0.502);
+    }
+
+    &__parrafo{
+        margin-bottom: 0px;
+        text-align: center;
+        color: $azul_oscuro;
+    }
+
+    &__logo{
+        color: $azul_oscuro;
     }
 }

@@ -80,10 +80,10 @@ nav {
     font-size: .9rem;
     transition: 450ms ease;
     background-color: white;
-    border-left: 2px solid #c57588;
-    border-right: 2px solid #c57588; }
+    border-left: 1px solid #c57588;
+    border-right: 1px solid #c57588; }
     .submenu li:last-child {
-      border-bottom: 2px solid #c57588; }
+      border-bottom: 1px solid #c57588; }
     .submenu li:first-of-type {
       padding-top: 5px; }
     .submenu li:last-of-type {
@@ -144,23 +144,42 @@ footer {
   height: 100%;
   margin-top: 3%; }
 
-.principal {
-  background-color: #e2a0ae; }
-  .principal__descripcion {
-    padding: 1.5%;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .principal__titulo {
-    margin-top: 1.5%;
-    font-family: "MonteCarlo", cursive;
-    font-size: 50px;
-    width: 100%;
-    color: black;
-    border-left: solid white 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+.principal__descripcion {
+  padding: 1.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify; }
+
+.principal__titulo {
+  margin-top: 1.5%;
+  font-family: "MonteCarlo", cursive;
+  font-size: 50px;
+  width: 100%;
+  color: black;
+  border-left: solid white 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.seccion-inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2rem; }
+  .seccion-inicio__item {
+    background-color: #e2a0ae;
+    padding: 2rem;
+    border-radius: 3px;
+    width: 15rem;
+    box-shadow: 0px 1.5px 1.5px 1px rgba(178, 178, 179, 0.502); }
+  .seccion-inicio__parrafo {
+    margin-bottom: 0px;
+    text-align: center;
+    color: #353536; }
+  .seccion-inicio__logo {
+    color: #353536; }
 
 /* Servicios */
 .parrafo-servicio {
@@ -205,6 +224,7 @@ footer {
   margin: 10px 10% 20px;
   word-spacing: 10px;
   letter-spacing: 0.09px;
+  width: 30rem;
   display: grid;
   grid-template-areas: "titulo titulo titulo" "imagenGrande cuadroPeq1 cuadroPeq2" "imagenGrande cuadroPeq3 cuadroPeq4";
   grid-template-rows: auto 2fr 2fr;
@@ -362,7 +382,7 @@ footer {
     width: 100%;
     position: relative; }
     .submenu li:first-child {
-      border-top: 2px solid #c57588; }
+      border-top: 1px solid #c57588; }
   body {
     font-size: 14px; }
   /* INICIO */
