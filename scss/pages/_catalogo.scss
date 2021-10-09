@@ -1,66 +1,100 @@
 /*Catálogo*/
 
-@mixin sizes ($gridarea){
-    grid-area: $gridarea;
+@mixin imagenes{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    padding: 3px;
 }
 
-.catalogo{
-    margin: 10px 10% 20px;
-    word-spacing: 10px;
-    letter-spacing: 0.09px;
-    width: 30rem;
+.contenedor-catalogo{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogo-tradicional{
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 10rem;
+    
 
     display: grid;
-    grid-template-areas: 
-    "titulo titulo titulo"
-    "imagenGrande cuadroPeq1 cuadroPeq2"
-    "imagenGrande cuadroPeq3 cuadroPeq4";
-
-    grid-template-rows: auto 2fr 2fr;
-    grid-template-columns: 3fr 1fr 1fr;
-    column-gap: .5%;
-    
-    &__subtitulo{
-    text-align: center;
-    word-spacing: 2px;
-    color: $azul_oscuro;
-    grid-area: titulo;
-    font-size: 130%;
-    align-self: center;
-    padding-bottom: .7%;
-    }
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 10rem;
 
     &__imagen{
-    @include sizes(imagenGrande);
+        @include imagenes;
+    }
+    
+    &__item:nth-child(1){
+        grid-row-start: span 3;
     }
 
-    &__cuadro--peq1{
-    @include sizes(cuadroPeq1);
-    }
-
-    &__cuadro--peq2{
-    @include sizes(cuadroPeq2);
-    }
-
-    &__cuadro--peq3{
-    @include sizes(cuadroPeq3);
-    }
-
-    &__cuadro--peq4{
-    @include sizes(cuadroPeq4);
+    &__item:nth-child(2){
+        grid-column-start: span 2;
+        grid-row-start: span 2;
     }
 }
 
+.catalogo-semiper{
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 10rem;
 
-.catalogo__cuadro--peq1:hover,.catalogo__cuadro--peq2:hover,.catalogo__cuadro--peq3:hover,.catalogo__cuadro--peq4:hover{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 10rem;
+
+    &__imagen{
+        @include imagenes;
+    }
+}
+
+.catalogo-acrilicas{
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 10rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 10rem;
+
+    &__imagen{
+        @include imagenes; 
+    }
+
+    &__item:nth-child(7){
+        grid-row-start: span 3;
+    }
+
+    &__item:nth-child(18){
+        grid-row-start: span 3;
+    }
+
+    &__item:nth-child(19){
+        grid-row-start: span 2;
+    }
+}
+
+.catalogo-recacr{
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 10rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 10rem;
+
+    &__imagen{
+        @include imagenes;
+    }
+}
+
+.catalogo-tradicional__imagen:hover,.catalogo-semiper__imagen:hover,.catalogo-acrilicas__imagen:hover,.catalogo-recacr__imagen:hover{
     transform: scale(1.2,1.2);
     z-index: 1;
     transition: .6s;
-}
-
-.catalogo__imag:hover{
-    transform: scale(1.6,1.2);
 }
 
