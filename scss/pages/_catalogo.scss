@@ -4,7 +4,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding: 3px;
 }
 
 .contenedor-catalogo{
@@ -23,6 +22,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 10rem;
+    grid-gap: 3px;
 
     &__imagen{
         @include imagenes;
@@ -46,6 +46,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 10rem;
+    grid-gap: 3px;
 
     &__imagen{
         @include imagenes;
@@ -53,13 +54,14 @@
 }
 
 .catalogo-acrilicas{
-    width: 80vw;
+    width: 70vw;
     margin: auto;
     margin-bottom: 10rem;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 10rem;
+    grid-gap: 3px;
 
     &__imagen{
         @include imagenes; 
@@ -76,6 +78,11 @@
     &__item:nth-child(19){
         grid-row-start: span 2;
     }
+
+    &__item:nth-child(23){
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
 }
 
 .catalogo-recacr{
@@ -84,8 +91,9 @@
     margin-bottom: 10rem;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 10rem;
+    grid-gap: 3px;
 
     &__imagen{
         @include imagenes;
