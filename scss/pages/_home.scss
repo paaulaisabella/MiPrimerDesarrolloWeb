@@ -6,6 +6,11 @@
     }
 }
 
+.inicio{
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
 .principal{
 
     &__descripcion{
@@ -13,13 +18,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: justify;
     }
 
     &__titulo{
     margin-top: 1.5%;
     font-family: $cursiva;
-    font-size: 50px;
+    font-size: 60px;
     width: 100%;
     color: black;
     border-left: solid white 10px;
@@ -35,12 +39,16 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 5rem 0;
+    border-top: 1.5px solid #6666688a;
+    border-bottom: 1.5px solid #6666688a;
 
     &__item{
-        background-color: $rosa_medio;
+        background-color: $rosa_claro;
         padding: 2rem;
-        border-radius: 3px;
+        border-radius: 5px;
         width: 15rem;
 
         box-shadow: 0px 1.5px 1.5px 1px hsla(240, 1%, 70%, 0.502);
