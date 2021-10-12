@@ -202,7 +202,8 @@ footer {
     border-radius: 20px;
     align-self: center;
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    object-fit: cover; }
   .parrafo-servicio__imagen--derecha {
     order: 2;
     margin-left: 10px; }
@@ -406,7 +407,10 @@ footer {
   div#carouselExampleControls {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 5px; } }
+    padding-bottom: 5px; }
+  /* INICIO */
+  .seccion-inicio__item {
+    margin-top: 3rem; } }
 
 @media only screen and (max-width: 768px) {
   /* GENERAL */
@@ -455,6 +459,10 @@ footer {
     justify-content: center;
     padding: 2%;
     height: 100%; }
+  .seccion-inicio {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 3rem; }
   /* SERVICIOS */
   .parrafo-servicio {
     flex-direction: column;
@@ -465,9 +473,21 @@ footer {
   .parrafo-servicio__imagen--izquierda, .parrafo-servicio__imagen--derecha {
     margin-right: 0px; }
   /* CATÁLOGO */
-  .catalogo {
-    margin: 20px 1.5%;
-    grid-template-rows: 1fr 2fr 2fr; }
+  .catalogo-tradicional__item:nth-child(1) {
+    grid-row-start: span 2;
+    grid-column-start: span 2; }
+  .catalogo-tradicional__item:nth-child(2) {
+    grid-row-start: span 1;
+    grid-column-start: span 1; }
+  .catalogo-semiper__item:nth-child(11) {
+    grid-row-start: span 1;
+    grid-column-start: span 2; }
+  .catalogo-acrilicas__item:nth-child(7) {
+    grid-row-start: span 2; }
+  .catalogo-acrilicas__item:nth-child(18) {
+    grid-row-start: span 2; }
+  .catalogo-acrilicas__item:nth-child(23) {
+    grid-row-start: span 1; }
   .catalogo__subtitulo {
     font-size: 220%; }
   /* SOBRE MI */
@@ -515,11 +535,47 @@ footer {
   .submenu li {
     white-space: pre-wrap; }
   /* CATÁLOGO */
-  .catalogo {
-    margin: 7px 1.5%;
-    grid-template-rows: 1fr 2fr 2fr; }
+  .catalogo-tradicional {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%; }
+    .catalogo-tradicional__item:nth-child(1) {
+      grid-row-start: span 2;
+      grid-column-start: span 2; }
+    .catalogo-tradicional__item:nth-child(2) {
+      grid-row-start: span 1;
+      grid-column-start: span 1; }
+  .catalogo-semiper {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%; }
+    .catalogo-semiper__item:nth-child(4) {
+      grid-row-start: span 1;
+      grid-column-start: span 1; }
+    .catalogo-semiper__item:nth-child(11) {
+      grid-row-start: span 1;
+      grid-column-start: span 2; }
+  .catalogo-acrilicas {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%; }
+    .catalogo-acrilicas__item:nth-child(23) {
+      grid-row-start: span 1;
+      grid-column-start: span 1; }
+  .catalogo-recacr {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%; }
+    .catalogo-recacr__item:nth-child(3) {
+      grid-column-start: span 2; }
+    .catalogo-recacr__item:nth-child(4) {
+      grid-column-start: span 2; }
+  .catalogo-videos {
+    display: flex;
+    flex-wrap: wrap; }
+    .catalogo-videos__item {
+      padding: 0 1rem;
+      height: 50vh;
+      width: 30vw; }
   .catalogo__subtitulo {
-    font-size: 150%; }
+    font-size: 130%;
+    text-align: center; }
   /* SOBRE MI */
   .sobre-mi {
     flex-direction: column;

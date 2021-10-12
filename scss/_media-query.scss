@@ -41,6 +41,11 @@
         padding-right: 0;
         padding-bottom: 5px;
     }
+
+    /* INICIO */
+    .seccion-inicio__item{
+        margin-top: 3rem;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -116,6 +121,12 @@
         padding: 2%;
         height: 100%;
     }
+
+    .seccion-inicio{
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 3rem;
+    }
     
     /* SERVICIOS */
     .parrafo-servicio{
@@ -133,9 +144,35 @@
     }
         
     /* CATÁLOGO */
-    .catalogo{
-        margin: 20px 1.5%;
-        grid-template-rows: 1fr 2fr 2fr;
+    .catalogo-tradicional{
+        &__item:nth-child(1){
+            grid-row-start: span 2;
+            grid-column-start: span 2;
+        }
+        &__item:nth-child(2){
+            grid-row-start: span 1;
+            grid-column-start: span 1;
+        }
+    }
+
+    .catalogo-semiper{
+        &__item:nth-child(11){
+            grid-row-start: span 1;
+            grid-column-start: span 2;
+        }
+        
+    }
+
+    .catalogo-acrilicas{
+        &__item:nth-child(7){
+            grid-row-start: span 2;
+        }
+        &__item:nth-child(18){
+            grid-row-start: span 2;
+        }
+        &__item:nth-child(23){
+            grid-row-start: span 1;
+        }
     }
         
     .catalogo__subtitulo{
@@ -212,12 +249,71 @@
 
     /* CATÁLOGO */
 
-    .catalogo{
-        margin: 7px 1.5%;
-        grid-template-rows: 1fr 2fr 2fr;
+    .catalogo-tradicional{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+
+        &__item:nth-child(1){
+            grid-row-start: span 2;
+            grid-column-start: span 2;
+        }
+        &__item:nth-child(2){
+            grid-row-start: span 1;
+            grid-column-start: span 1;
+        }
     }
+
+    .catalogo-semiper{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+
+        &__item:nth-child(4){
+            grid-row-start: span 1;
+            grid-column-start: span 1;
+        }
+        &__item:nth-child(11){
+            grid-row-start: span 1;
+            grid-column-start: span 2;
+        }
+        
+    }
+
+    .catalogo-acrilicas{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+
+        &__item:nth-child(23){
+            grid-row-start: span 1;
+            grid-column-start: span 1;
+        }
+    }
+
+    .catalogo-recacr{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+
+        &__item:nth-child(3){
+            grid-column-start: span 2;
+        }
+        &__item:nth-child(4){
+            grid-column-start: span 2;
+        }
+    }
+
+    .catalogo-videos{
+        display: flex; 
+        flex-wrap: wrap;
+        
+        &__item{
+            padding: 0 1rem;
+            height: 50vh;
+            width: 30vw;
+        }
+    }
+
     .catalogo__subtitulo{
-        font-size: 150%;
+        font-size: 130%;
+        text-align: center;
     }
 
     /* SOBRE MI */
