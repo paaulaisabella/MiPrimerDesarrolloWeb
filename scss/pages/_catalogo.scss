@@ -27,8 +27,8 @@
         @include imagenes;
     }
     
-    &__item:nth-child(1){
-        grid-row-start: span 3;
+    &__item:nth-child(3){
+        grid-row-start: span 2;
     }
 
     &__item:nth-child(2){
@@ -50,11 +50,15 @@
     &__imagen{
         @include imagenes;
     }
-
-    &__item:nth-child(4){
+    &__item:nth-child(1){
+        grid-row-start: span 3;
+        grid-column-start: span 2;
+        overflow-y: hidden;
+    }
+    /* &__item:nth-child(4){
         grid-row-start: span 2;
         grid-column-start: span 2;
-    }
+    } */
 }
 
 .catalogo-acrilicas{

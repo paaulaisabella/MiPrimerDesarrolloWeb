@@ -11,7 +11,14 @@ footer{
 }
 
 .footer__comentario{
+    margin-top: 3rem;
     text-transform: uppercase;
+    color: #666668d2;
+    line-height: 2px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .footer__parrafo{

@@ -43,8 +43,15 @@
     }
 
     /* INICIO */
+    .seccion-inicio{
+        padding: 0;
+    }
     .seccion-inicio__item{
-        margin-top: 3rem;
+        margin: 2rem 1rem 1rem 0;
+
+        &:last-child{
+            margin-bottom: 2rem;
+        }
     }
 }
 
@@ -126,6 +133,12 @@
         margin-top: 0;
         padding-top: 0;
         padding-bottom: 3rem;
+
+        &__item{
+            &:last-child{
+                margin-bottom: 0;
+            };
+        }
     }
     
     /* SERVICIOS */
@@ -146,12 +159,24 @@
     /* CATÁLOGO */
     .catalogo-tradicional{
         &__item:nth-child(1){
-            grid-row-start: span 2;
+            grid-row-start: span 1;
             grid-column-start: span 2;
         }
         &__item:nth-child(2){
             grid-row-start: span 1;
             grid-column-start: span 1;
+        }
+        &__item:nth-child(3){
+            grid-row-start: span 1;
+            grid-column-start: span 1;
+        }
+        &__item:nth-child(4){
+            grid-row-start: span 1;
+            grid-column-start: span 2;
+        }
+        &__item:nth-child(5){
+            grid-row-start: span 1;
+            grid-column-start: span 2;
         }
     }
 
@@ -247,6 +272,12 @@
     white-space: pre-wrap;
 }
 
+    /* INICIO */
+    .seccion-inicio__item{
+        width: 15rem;
+        margin-right: 0;
+    }
+
     /* CATÁLOGO */
 
     .catalogo-tradicional{
@@ -254,12 +285,16 @@
         width: 100%;
 
         &__item:nth-child(1){
-            grid-row-start: span 2;
+            grid-row-start: span 1;
             grid-column-start: span 2;
         }
         &__item:nth-child(2){
             grid-row-start: span 1;
             grid-column-start: span 1;
+        }
+        &__item:nth-child(6){
+            grid-row-start: span 1;
+            grid-column-start: span 2;
         }
     }
 
