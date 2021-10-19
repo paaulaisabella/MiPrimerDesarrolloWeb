@@ -145,11 +145,14 @@
     .parrafo-servicio{
         flex-direction: column;
         margin: 5% 5%;
+        &__subtitulo{
+            text-align: center;
+        }
     }
     
     .parrafo-servicio__imagen--derecha{
-        margin: 0px;
-        margin-top: 3%;
+        margin-left: 0px;
+        order: initial;
         }
     
     .parrafo-servicio__imagen--izquierda{
@@ -245,6 +248,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        padding: 30px 0px;
     }
     
     .footer__logo{
@@ -252,20 +256,30 @@
         height: 20px;
     }
     
+    .footer__parrafo{
+        width: 100%;
+    }
+
     .footer__item{
-        padding: 2px;
+        padding: 0px 2px;
         width: auto;
         height: auto;
     }
 
     .footer__lista{
         display: flex;
-        width: 40vw;
+        width: 100%;
         margin-bottom: 15px;
     }
 
     .footer__comentario{
         margin-bottom: 3%;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        &-espacio{
+            line-height: 20px;
+        }
     }
 
     .submenu li {

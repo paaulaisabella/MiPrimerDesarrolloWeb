@@ -21,7 +21,6 @@
     font-size: 60px;
     width: 100%;
     color: black;
-    border-left: solid white 10px;
 
     display: flex;
     align-items: center;
@@ -43,22 +42,27 @@
     &__link{
         text-decoration: none;
     }
-
+    
     &__item{
-    background-color: #fbdfe9;
-    padding: 2rem;
-    border-radius: 5px;
-    width: 15rem;
-    box-shadow: 0px 1.5px 1.5px 1px rgba(178, 178, 179, 0.502);
+        background-color: #fbdfe9;
+        padding: 2rem;
+        border-radius: 5px;
+        width: 15rem;
+        box-shadow: 0px 1.5px 1.5px 1px rgba(178, 178, 179, 0.502);
     }
-
+    
     &__parrafo{
         margin-bottom: 0px;
         text-align: center;
         color: $azul_oscuro;
-
+        transition: 250ms ease;
+        &:hover{
+            transform: translateY(-1px);
+            color: $rosa_oscuro;
+        }
+        
     }
-
+    
     &__logo{
         color: $azul_oscuro;
     }
