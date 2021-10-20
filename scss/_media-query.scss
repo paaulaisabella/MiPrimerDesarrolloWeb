@@ -135,6 +135,7 @@
         padding-bottom: 3rem;
 
         &__item{
+            width: 20rem;
             &:last-child{
                 margin-bottom: 0;
             };
@@ -268,8 +269,9 @@
 
     .footer__lista{
         display: flex;
-        width: 100%;
+        width: 80vw;
         margin-bottom: 15px;
+
     }
 
     .footer__comentario{

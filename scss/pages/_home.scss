@@ -33,24 +33,24 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-bottom: 5rem;
-    padding: 5rem 0;
+    padding: 3rem 0;
     border-top: 1.5px solid #6666688a;
     border-bottom: 1.5px solid #6666688a;
 
-    &__link{
-        text-decoration: none;
-    }
     
     &__item{
         background-color: #fbdfe9;
-        padding: 2rem;
+        padding: 3rem 2rem;
         border-radius: 5px;
-        width: 15rem;
         box-shadow: 0px 1.5px 1.5px 1px rgba(178, 178, 179, 0.502);
     }
     
+    &__link{
+        text-decoration: none;
+    }
+
     &__parrafo{
         margin-bottom: 0px;
         text-align: center;
