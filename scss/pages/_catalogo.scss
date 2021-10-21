@@ -6,6 +6,12 @@
     object-fit: cover;
 }
 
+@mixin grid{
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
 .contenedor-catalogo{
     display: flex; 
     flex-direction: column;
@@ -14,9 +20,7 @@
 }
 
 .catalogo-tradicional{
-    width: 80vw;
-    margin: auto;
-    margin-bottom: 3rem;
+    @include grid;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -38,9 +42,7 @@
 }
 
 .catalogo-semiper{
-    width: 80vw;
-    margin: auto;
-    margin-bottom: 3rem;
+    @include grid;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -57,9 +59,7 @@
 }
 
 .catalogo-acrilicas{
-    width: 80vw;
-    margin: auto;
-    margin-bottom: 3rem;
+    @include grid;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -89,9 +89,7 @@
 }
 
 .catalogo-recacr{
-    width: 80vw;
-    margin: auto;
-    margin-bottom: 3rem;
+    @include grid;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);

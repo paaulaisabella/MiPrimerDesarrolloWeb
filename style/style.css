@@ -656,9 +656,9 @@ footer {
 
 .comentario {
   word-spacing: 1px;
-  font-size: 35px;
-  padding: 10px;
-  text-align: center; }
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1rem; }
 
 main {
   margin-left: 1.5%;
